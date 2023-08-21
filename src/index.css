@@ -1,5 +1,45 @@
-body {
+/*
+Author: Cassie Lewis
+https://clewisdev.com
+Date: 
+*/
+
+/****** VARIABLES ******/
+
+:root {
+    
+  /*COLORS*/
+  --body-bg: lightgray;
+  --bg: white;
+  --text-color: white;
+  --label-color: black;
+  --accent-color:  #3232df;
+  --accent-color-two: #2f962f;  
+
+  
+  /*BORDER RADIUS*/
+  --br-soft: 1rem;
+  --br-round: 50%;
+  
+  /*FONT SIZES*/
+  --fs-s: 1rem;
+  --fs-m: 1.5rem;
+  --fs-l: 2rem;
+}
+
+/****** MARGIN AND PADDING RESET ******/
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******* GLOBAL STYLES *******/
+
+/*CSS FROM PROJECT FILES*/
+body {
+  background-color: var(--body-bg);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +47,84 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radio-field {
+  max-width: 800px;
+  min-height: 300px;
+  background-color: var(--bg);
+  padding: 2rem;
+  border: 2px solid #333;
+  border-radius: var(--br-soft);
+  box-shadow: 1rem 1rem #777;
+
+  display: flex;
+  gap: 2rem;
+  }
+
+.radio-legend {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  margin: 0 auto 2rem auto;
+  border-radius: var(--br-soft);
+}
+
+.radio-legend,
+.radio-field label {
+  font-size: var(--fs-l);
+}
+
+.radio-field label {
+  color: var(--label-color);
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: var(--br-soft);
+  border: 5px solid var(--body-bg);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.radio-field label:hover {
+  background-color: var(--body-bg);
+  border: 5px solid var(--accent-color-two);
+}
+
+.radio-field label:focus {
+  outline: 5px solid var(--accent-color); 
+  ;
+}
+
+.selection {
+  width: 350px;
+  height: 50px;
+  font-size: var(--fs-m);
+  text-align: center;
+  padding: .5rem;
+  margin: 1rem;
+  border-radius: var(--br-soft);
+}
+
+@media (max-width: 700px) {
+  .radio-field {
+    min-height: 550px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
 }
