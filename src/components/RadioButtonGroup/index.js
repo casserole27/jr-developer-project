@@ -8,14 +8,16 @@ export default function RadioButtonGroup({ selectedValue, options, onChange }) {
   const radioEls = options.map(el => {
     return (
       <div>
-        <label>
+        <label 
+          tabIndex={0}
+          >
           <input
             type="radio"
             id={el.value}
             name="options"
             value={el.label}
             checked={selectedValue}
-            onChange={onChange}>  
+            onChange={onChange}>           
           </input>
           {el.label}
         </label>
@@ -24,12 +26,12 @@ export default function RadioButtonGroup({ selectedValue, options, onChange }) {
   });
 
   return (
-    <div>
-      <fieldset>
-        <legend>Select an option</legend>
+    <div className="radio-container">
+      <fieldset className="radio-field">
+        <legend className="radio-legend">Select an option</legend>
         {radioEls}
-        <p id="selection"></p>
       </fieldset>
+      <p className="selection" id="selection"></p>
     </div>
   );
 };
