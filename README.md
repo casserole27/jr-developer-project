@@ -1,3 +1,20 @@
+ ## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+
+### Overview
+
 **Project Prompt: RadioButtonGroup Component**
 
 **Task:**
@@ -21,6 +38,7 @@ npm start
 ```sh
 npm run test
 ```
+### The challenge
 
 **Requirements:**
 
@@ -65,3 +83,56 @@ This project requires completing the `RadioButtonGroup` component located in `sr
 - Styling implementation (again, we will not evaluate how pretty it looks, but just showcase _some_ CSS in your solution).
 
 Feel free to ask any questions if you need further clarification or guidance. Good luck with the project!
+
+### Screenshot
+
+<h2>Pages</h2>
+<hr>
+
+![screenshot](#)
+
+### Links
+
+- [Github](#)
+
+## My process
+
+- Create Github repository
+- Set up initial files
+- Consult image file files
+- Project work: Github issues and version control
+- Check markup and accessibility
+(https://validator.w3.org/)
+(https://wave.webaim.org/)
+- README file documentation
+
+### Built with
+
+- semantic HTML5
+- CSS custom properties
+- React components
+
+### What I learned
+
+
+### Continued development
+
+
+### Useful resources
+
+- [Scrimba React course - React basics](#)
+- [MDN Web Docs - radio buttons](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
+
+
+## Author
+
+- Website - [C Lewis](https://www.clewisdev.com)
+- LinkedIn - [LinkedIn](https://www.linkedin.com/in/clewisdev/)
+
+
+## Acknowledgments
+
+
+
+
+
