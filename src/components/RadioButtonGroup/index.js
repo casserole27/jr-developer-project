@@ -6,17 +6,23 @@ export default function RadioButtonGroup({ selectedValue, options, onChange }) {
   };
 
   const radioEls = options.map(el => {
+    const styles = {
+      backgroundColor: selectedValue === el.label ? '#2c9e2c' : 'lightgray',
+      color: selectedValue === el.label ? 'white' : 'black',
+      fontWeight: selectedValue === el.label ? '700' : '400',
+    };
+    
     return (
-      <div>
+      <div key={el.value}>
         <label 
           tabIndex={0}
-          >
+          style={styles}>
           <input
             type="radio"
             id={el.value}
             name="options"
             value={el.label}
-            checked={selectedValue}
+            checked={selectedValue === el.label}
             onChange={handleRadioChange}>           
           </input>
           {el.label}
@@ -31,7 +37,6 @@ export default function RadioButtonGroup({ selectedValue, options, onChange }) {
         <legend className="radio-legend">Select an option</legend>
         {radioEls}
       </fieldset>
-      <p className="selection" id="selection"></p>
-    </div>
+      </div>
   );
 };
