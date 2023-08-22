@@ -1,8 +1,8 @@
 export default function RadioButtonGroup({ selectedValue, options, onChange }) {
   
-  onChange = e => {
-    selectedValue = e.target.value;
-    document.getElementById('selection').textContent = `You have chosen ${selectedValue}`;
+  const handleRadioChange = e => {
+    const selectedValue = e.target.value;
+    onChange(selectedValue); 
   };
 
   const radioEls = options.map(el => {
@@ -17,7 +17,7 @@ export default function RadioButtonGroup({ selectedValue, options, onChange }) {
             name="options"
             value={el.label}
             checked={selectedValue}
-            onChange={onChange}>           
+            onChange={handleRadioChange}>           
           </input>
           {el.label}
         </label>
