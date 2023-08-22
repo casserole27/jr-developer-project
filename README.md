@@ -86,20 +86,20 @@ Feel free to ask any questions if you need further clarification or guidance. Go
 
 ### Screenshot
 
-<h2>Pages</h2>
+<h2>RadioButtonGroup Component</h2>
 <hr>
 
-![screenshot](#)
+![screenshot](assets/RadioButtonGroup-screenshot.png)
 
 ### Links
 
-- [Github](#)
+- [Github](https://github.com/casserole27/jr-developer-project)
 
 ## My process
 
 - Create Github repository
 - Set up initial files
-- Consult image file files
+- Consult image files
 - Project work: Github issues and version control
 - Check markup and accessibility
 (https://validator.w3.org/)
@@ -108,20 +108,47 @@ Feel free to ask any questions if you need further clarification or guidance. Go
 
 ### Built with
 
-- semantic HTML5
+- semantic HTML5 / JSX
 - CSS custom properties
+- CSS flexbox
+- Responsive Design
 - React components
+- React Testing Library / Jest
+- chatGPT : understanding and reviewing syntax
 
 ### What I learned
+
+- time management refinement
+- running node.js/npm in local environment
+- Basic React Syntax
+   - JSX
+   - props
+   - event listener syntax
+   - state and useState()
+   - conditional rendering of CSS styles
+- React Testing Library / Jest
 
 
 ### Continued development
 
+- A11y : when using a screen reader, it does not read the option selected on pressing the Enter key
+- Idea for A11y : display chosen option message on click or enter
+- Continue to learn React and testing
+
+- Code Reviews and Feedback:
+
 
 ### Useful resources
 
-- [Scrimba React course - React basics](#)
+- [Scrimba React course - React basics](https://scrimba.com/learn/learnreact)
 - [MDN Web Docs - radio buttons](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
+- [Geeks for Geeks - render an array of objects in React](https://www.geeksforgeeks.org/how-to-render-an-array-of-objects-in-reactjs/)
+- [W3 Schools - React Events](https://www.w3schools.com/react/react_events.asp)
+- [We Schools - useState](https://www.w3schools.com/react/react_usestate.asp)
+
+- [React Testing Library - introduction](https://testing-library.com/docs/react-testing-library/intro/)
+- [React Testing Library - docs](https://testing-library.com/docs/)
+- [React Testing Library tutorial](https://www.robinwieruch.de/react-testing-library/)
 
 
 ## Author
@@ -131,6 +158,8 @@ Feel free to ask any questions if you need further clarification or guidance. Go
 
 
 ## Acknowledgments
+
+- Bob Ziroll and Paul O. of Scrimba
 
 
 
