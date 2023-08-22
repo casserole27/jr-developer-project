@@ -100,7 +100,7 @@ Feel free to ask any questions if you need further clarification or guidance. Go
 - Create Github repository
 - Set up initial files
 - Consult image files
-- Project work: Github issues and version control
+- Project work: divide project into smaller tasks using Github issues and version control
 - Check markup and accessibility
 (https://validator.w3.org/)
 (https://wave.webaim.org/)
@@ -108,12 +108,17 @@ Feel free to ask any questions if you need further clarification or guidance. Go
 
 ### Built with
 
+- Careful consideration of instructions from provided README
 - semantic HTML5 / JSX
+- UI/UX considerations
 - CSS custom properties
 - CSS flexbox
+- CSS :hover and :focus pseudo-classes for visual distinction of user selection
 - Responsive Design
-- React components
-- React Testing Library / Jest
+- React components: used props and event handling to achieve functionality
+- Conditional style rendering in React : change bg color, color, and font weight based on user selection
+- React Testing Library / Jest : wrote a test suite for RadioButtonGroup with three test cases
+- Accessibility : added keyboard / enter key functionality for better user experience
 - chatGPT : understanding and reviewing syntax
 
 ### What I learned
@@ -131,6 +136,7 @@ Feel free to ask any questions if you need further clarification or guidance. Go
 
 ### Continued development
 
+- Markup and A11y validation
 - A11y : when using a screen reader, it does not read the option selected on pressing the Enter key
 - Idea for A11y : display chosen option message on click or enter
 - Continue to learn React and testing
@@ -144,7 +150,7 @@ Feel free to ask any questions if you need further clarification or guidance. Go
 - [MDN Web Docs - radio buttons](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
 - [Geeks for Geeks - render an array of objects in React](https://www.geeksforgeeks.org/how-to-render-an-array-of-objects-in-reactjs/)
 - [W3 Schools - React Events](https://www.w3schools.com/react/react_events.asp)
-- [We Schools - useState](https://www.w3schools.com/react/react_usestate.asp)
+- [W3 Schools - useState](https://www.w3schools.com/react/react_usestate.asp)
 
 - [React Testing Library - introduction](https://testing-library.com/docs/react-testing-library/intro/)
 - [React Testing Library - docs](https://testing-library.com/docs/)
