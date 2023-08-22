@@ -1,8 +1,13 @@
 export default function RadioButtonGroup({ selectedValue, options, onChange }) {
   
   const handleRadioChange = e => {
-    const selectedValue = e.target.value;
-    onChange(selectedValue); 
+    onChange(e.target.value);
+  };
+
+  const handleRadioKeyDown = (e, el) => {
+    if (e.key === 'Enter') {
+      onChange(el.label);
+    }
   };
 
   const radioEls = options.map(el => {
@@ -13,22 +18,23 @@ export default function RadioButtonGroup({ selectedValue, options, onChange }) {
     };
     
     return (
-      <div key={el.value}>
-        <label 
-          tabIndex={0}
-          style={styles}>
-          <input
-            type="radio"
-            id={el.value}
-            name="options"
-            value={el.label}
-            checked={selectedValue === el.label}
-            onChange={handleRadioChange}>           
-          </input>
+    <div key={el.value}>
+      <label 
+        tabIndex={0}
+        style={styles}
+        onKeyDown={e => handleRadioKeyDown(e, el)}>
+        <input
+          type="radio"
+          id={el.value}
+          name="options"
+          value={el.label}
+          checked={selectedValue === el.label}
+          onChange={handleRadioChange}>        
+        </input>
           {el.label}
-        </label>
-      </div>
-    );
+      </label>
+    </div>
+    )
   });
 
   return (
@@ -37,6 +43,6 @@ export default function RadioButtonGroup({ selectedValue, options, onChange }) {
         <legend className="radio-legend">Select an option</legend>
         {radioEls}
       </fieldset>
-      </div>
-  );
+    </div>
+  )
 };
