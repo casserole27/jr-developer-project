@@ -12,12 +12,13 @@ Date:
   --body-bg: lightgray;
   --bg: white;
   --text-color: white;
-  --label-color: black;
-  --accent-color:  #3232df;
-  --accent-color-two: #2f962f;  
+  --accent-color:  #4343da;
+  --accent-color-two: #2c9e2c;  
+  --focus-color: #e75d5d;
 
   
   /*BORDER RADIUS*/
+  --br-small: .25rem;
   --br-soft: 1rem;
   --br-round: 50%;
   
@@ -91,23 +92,22 @@ input[type="radio"]{
 }
 
 .radio-field label {
-  color: var(--label-color);
   text-align: center;
   padding: 1.5rem;
-  border-radius: var(--br-soft);
+  border-radius: var(--br-small);
   border: 5px solid var(--body-bg);
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .radio-field label:hover {
-  background-color: var(--body-bg);
   border: 5px solid var(--accent-color-two);
+  border-radius: var(--br-soft);
 }
 
 .radio-field label:focus {
-  outline: 5px solid var(--accent-color); 
-  ;
+  border-radius: var(--br-soft);
+  outline: 3px solid var(--focus-color); 
 }
 
 .selection {
