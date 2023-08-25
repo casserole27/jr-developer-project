@@ -84,7 +84,8 @@ input[type="radio"]{
   border-radius: var(--br-small);
 }
 
-.radio-field label {
+/* .radio-field label { */
+.radio-field button {
   font-size: var(--fs-l);
   text-align: center;
   padding: 1.5rem;
@@ -94,12 +95,14 @@ input[type="radio"]{
   transition: 0.3s ease;
 }
 
-.radio-field label:hover {
+/* .radio-field label:hover { */
+.radio-field button:hover{
   border: 5px solid var(--accent-color-two);
   border-radius: var(--br-soft);
 }
 
-.radio-field label:focus {
+/* .radio-field label:focus { */
+.radio-field button:focus {  
   border-radius: var(--br-soft);
   outline: 3px solid var(--focus-color); 
 }

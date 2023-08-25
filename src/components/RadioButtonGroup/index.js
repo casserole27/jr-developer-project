@@ -1,15 +1,5 @@
 export default function RadioButtonGroup({ selectedValue, options, onChange }) {
   
-  const handleRadioChange = e => {
-    onChange(e.target.value);
-  };
-
-  const handleRadioKeyDown = (e, el) => {
-    if (e.key === 'Enter') {
-      onChange(el.label);
-    }
-  };
-
   const radioEls = options.map(el => {
     const styles = {
       backgroundColor: selectedValue === el.label ? '#2c9e2c' : 'lightgray',
@@ -19,20 +9,15 @@ export default function RadioButtonGroup({ selectedValue, options, onChange }) {
     
     return (
     <div key={el.value}>
-      <label 
-        tabIndex={0}
+      <button
+        type="button"
         style={styles}
-        onKeyDown={e => handleRadioKeyDown(e, el)}>
-        <input
-          type="radio"
-          id={el.value}
-          name="options"
-          value={el.label}
-          checked={selectedValue === el.label}
-          onChange={handleRadioChange}>        
-        </input>
-          {el.label}
-      </label>
+        role="radio"
+        value={el.label}
+        aria-checked={selectedValue === el.label}
+        onClick={e => onChange(e.target.value)}>
+        {el.label}
+      </button>
     </div>
     )
   });
