@@ -142,6 +142,31 @@ Feel free to ask any questions if you need further clarification or guidance. Go
 - Continue to learn React and testing
 
 - Code Reviews and Feedback:
+- Jerry's suggestions to keep built-in keyboard functionality and fix a11y/screen reader issues:
+- Option: 'visibly' hide radio inputs so their functionality is still there
+```css
+input[type="radio"] {
+   opacity: 0;
+   width: 0;
+}
+```
+- Option: use the button tag with ARIA
+```jsx
+    return (
+    <div key={el.value}>
+      <button
+        type="button"
+        style={styles}
+        role="radio"
+        value={el.label}
+        aria-checked={selectedValue === el.label}
+        onClick={e => onChange(e.target.value)}>
+        {el.label}
+      </button>
+    </div>
+    )
+```
+- look at unit tests as they are no longer passing
 
 
 ### Useful resources
